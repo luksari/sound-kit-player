@@ -1,0 +1,133 @@
+// Variables
+
+$bluishGray: #222c38;
+$sunnyYellow: rgba(#ebbc2f, 1);
+$darkenBg: rgba(0, 0, 0, 0.4);
+$pFontsize: 1rem;
+$normShadow: 0 0 .5rem rgba(#000000, 0.5);
+
+// Styles
+
+//normalize
+*, html, body{
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+}
+//body styling
+body{
+  background-image: url(../img/bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  &::before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+  }
+}
+//flex page wrapper
+.page-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+
+  //flex page header
+  .page-header
+  {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    h1
+    {
+      padding: 1.5rem 6rem;
+      text-align: center;
+      font-size: 4rem;
+      color: $sunnyYellow;
+      text-shadow: $normShadow;
+      font-family: 'Pacifico', cursive;
+    }
+  }
+
+  footer.page-footer
+  {
+    background-color: rgba($bluishGray, 0.5);
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: $normShadow;
+    p{
+      color: #ffffff;
+      font-size: .8rem;
+    }
+  }
+}
+//flex key container
+.keys{
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  width: 100%;
+  flex: 1;
+  text-align: center;
+  flex-wrap: wrap;
+
+  .key
+  {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+    margin-top: 10em;
+    padding: 0.6rem;
+    border-radius: 1rem;
+    border: 0.1rem solid $bluishGray;
+    background: $darkenBg;
+    box-shadow: $normShadow;
+    transition:all ;
+
+  }
+  .playing
+  {
+    transform: scale(1.2) rotateY(360deg);
+    border-color: $sunnyYellow;
+    background: $sunnyYellow;
+    box-shadow: 0 0 .5rem $sunnyYellow;
+    .sound{
+      color: $bluishGray;
+    }
+    kbd{
+      color: $bluishGray;
+    }
+  }
+}
+.key{
+  .sound{
+    font-size: $pFontsize;
+    color: $sunnyYellow;
+    text-align: center;
+    align-self: center;
+    text-shadow: 0 0 .5rem #000000;
+  }
+  kbd{
+    color: #ffffff;
+    display: block;
+    font-weight: 900;
+    font-size: 1.9rem;
+    align-self: center;
+  }
+}
