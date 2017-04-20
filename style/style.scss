@@ -101,7 +101,7 @@ body{
     transition:all ;
 
   }
-  .playing
+  .started
   {
     transform: scale(1.2) rotateY(360deg);
     border-color: $sunnyYellow;
