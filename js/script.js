@@ -7,7 +7,7 @@ function playSoundKey(e) {
   audioEl.currentTime = 0;
   audioEl.play();
   keyEl.style.transitionDuration = `${audioEl.duration * 0.5}s`;
-  keyEl.classList.add('playing');
+  keyEl.classList.add('started');
 }
 // function playSoundTouch(e) {
 //   let keyEl = e.target;
