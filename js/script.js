@@ -18,7 +18,8 @@
   }
 
   const keys = document.querySelectorAll('.key');
-  keys.forEach(keyEl => {
+  const keysArr = Array.prototype.slice.call(keys);
+  keysArr.forEach(keyEl => {
     keyEl.addEventListener('transitionend', endTransition);
   });
 })();
