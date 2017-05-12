@@ -17,8 +17,8 @@
     this.classList.remove('started');
   }
 
-  const keys = document.querySelectorAll('.key');
-  const keysArr = [].slice.call(keys);
+  var keys = document.querySelectorAll('.key');
+  var keysArr = [].slice.call(keys);
   keysArr.forEach(keyEl => {
     keyEl.addEventListener('transitionend', endTransition);
   });
