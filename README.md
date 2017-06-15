@@ -1,8 +1,8 @@
-# Sounds of nature - sound player
+## Sounds of nature - sound player
 
 This is my **first** JavaScript project, created to **increase** knowledge of basic issues connected with JS.
 
-## Technologies
+### Technologies
 
 To create project i have used
 ```markdown
