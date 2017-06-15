@@ -1,13 +1,13 @@
-#SCSS
+
 *.scss
 
-#Minified
+
 *.min.*
 
-#CSS
+
 *.css
 
-#Others
+
 *.png
 *.jpg
 *.mp3
