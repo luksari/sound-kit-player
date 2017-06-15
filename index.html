@@ -10,45 +10,49 @@
 </head>
 <body>
 <div class="page-wrapper">
-    <header class="page-header">
-      <h1>Sounds of Nature</h1>
-    </header>
-      <div class="keys">
-        <div class="key" data-key="65">
-          <kbd>A</kbd>
-          <span class="sound">Bird</span>
-        </div>
-        <div class="key" data-key="83">
-          <kbd>S</kbd>
-          <span class="sound">Calmness</span>
-        </div>
-        <div class="key" data-key="68">
-          <kbd>D</kbd>
-          <span class="sound">Raindrop</span>
-        </div>
-        <div class="key" data-key="70">
-          <kbd>F</kbd>
-          <span class="sound">Squirell</span>
-        </div>
-        <div class="key" data-key="71">
-          <kbd>G</kbd>
-          <span class="sound">1738</span>
-        </div>
-        <div class="key" data-key="72">
-          <kbd>H</kbd>
-          <span class="sound">Panda</span>
-        </div>
-        <div class="key" data-key="74">
-          <kbd>J</kbd>
-          <span class="sound">Simple talk-show</span>
-        </div>
-        <div class="key" data-key="75">
-          <kbd>K</kbd>
-          <span class="sound">Ultra calmness</span>
-        </div>
+      <header class="page-header">
+        <h1>Sounds of Nature</h1>
+      </header>
+        <div class="keys">
+          <div class="key" data-key="65">
+            <kbd>A</kbd>
+            <span class="sound">Bird</span>
+          </div>
+          <div class="key" data-key="83">
+            <kbd>S</kbd>
+            <span class="sound">Calmness</span>
+          </div>
+          <div class="key" data-key="68">
+            <kbd>D</kbd>
+            <span class="sound">Raindrop</span>
+          </div>
+          <div class="key" data-key="70">
+            <kbd>F</kbd>
+            <span class="sound">Squirell</span>
+          </div>
+          <div class="key" data-key="71">
+            <kbd>G</kbd>
+            <span class="sound">1738</span>
+          </div>
+          <div class="key" data-key="72">
+            <kbd>H</kbd>
+            <span class="sound">Panda</span>
+          </div>
+          <div class="key" data-key="74">
+            <kbd>J</kbd>
+            <span class="sound">Simple talk-show</span>
+          </div>
+          <div class="key" data-key="75">
+            <kbd>K</kbd>
+            <span class="sound">Ultra calmness</span>
+          </div>
       </div>
+        <div class="volume">
+            <label for="volume-change">Volume</label>
+            <input id="volume-change" class="volume-changer" type="range" min="0" max="1" value="0.4" step="any">
+        </div>
       <footer class="page-footer">
-        <p>All rights reserved &copy; Łukasz Tyszkiewicz 2017</p>
+          <p>All rights reserved &copy; Łukasz Tyszkiewicz 2017</p>
       </footer>
     </div>
   <audio src="src/Aye.mp3" data-key="65"></audio>
