@@ -3,7 +3,7 @@
   function playSoundKey(e) {
     const audioEl = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     const keyEl = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-    const volumeEl = document.querySelector("input#volume-change");
+    const volumeEl = document.querySelector("input.volume-changer");
     if (!audioEl)
       return;
     audioEl.currentTime = 0;
