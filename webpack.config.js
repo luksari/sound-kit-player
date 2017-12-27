@@ -13,7 +13,7 @@ let config = {
     resolve: { // These options change how modules are resolved
     extensions: ['.js', '.jsx', '.json', '.scss', '.css', '.jpeg', '.jpg', '.gif', '.png'], // Automatically resolve certain extensions
     alias: { // Create aliases
-      images: path.resolve(__dirname, 'src/assets/img'),  // src/assets/images alias
+      images: path.resolve(__dirname, 'src/assets/img'),  
       sounds: path.resolve(__dirname, 'src/assets/sounds')
     }
 },
@@ -31,7 +31,6 @@ let config = {
     },
     {
       test: /\.scss$/,
-      include: __dirname,
       exclude: /node_modules/,
       use: ExtractTextWebpackPlugin.extract({
         use: ['css-loader', 'sass-loader'],
@@ -59,7 +58,6 @@ let config = {
           },
         }],
         exclude: /node_modules/,
-        include: __dirname,
     },
     {
       test:  /\.(ogg|mp3|wav|mpe?g)$/i,
