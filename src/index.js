@@ -4,7 +4,10 @@ require('./styles.scss');
 require.context("./assets/sounds", false, /\.wav$/);
 require.context("./assets/img", false, /\.jpeg$/);
 
-const SOUND = path.resolve(__dirname, './sounds');
+const getURL = window.location;
+const baseURL = getURL .protocol + "//" + getURL.host + "/" + getURL.pathname.split('/')[1];
+const SOUND = baseURL + "sounds";
+
 const sounds = {
   1: {
     path: `${SOUND}/bird1.wav`,
