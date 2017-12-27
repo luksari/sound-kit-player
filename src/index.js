@@ -6,7 +6,7 @@ require.context("./assets/img", false, /\.jpeg$/);
 
 const getURL = window.location;
 const baseURL = getURL .protocol + "//" + getURL.host + "/" + getURL.pathname.split('/')[1];
-const SOUND = baseURL + "sounds";
+const SOUND = baseURL + "/sounds";
 
 const sounds = {
   1: {
