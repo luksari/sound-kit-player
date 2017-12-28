@@ -28,7 +28,7 @@ To create project i have used
 
 ```
 
-### You can check results on [website](https://luksari.github.io/sounds-of-nature/)
+### You can check results on [website](https://luksari.github.io/sound-kit-player/)
 
 
 
